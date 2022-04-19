@@ -15,7 +15,7 @@ int main()
     D = b * b - (4* a * c);
     cout <<"D = "<< D << endl;
     if (D > 0){
-        D = pow(D,1.0/2.0);
+        D = sqrt(D);
         cout << "x1 = " << (-b - D)/ (2*a) << endl;
         cout << "x2 = " << (-b + D)/ (2*a) << endl;
     }
