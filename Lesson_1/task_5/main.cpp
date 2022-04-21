@@ -22,7 +22,7 @@ int main()
     if (D =0){
         cout <<"x = " << (-b - D)/ (2*a) << endl;
     }
-    else {
+    if (D < 0) {
         cout <<"There are no roots" << endl;
     }
     return 0;
