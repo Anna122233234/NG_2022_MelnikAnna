@@ -19,7 +19,7 @@ int main()
         cout << "x1 = " << (-b - D)/ (2*a) << endl;
         cout << "x2 = " << (-b + D)/ (2*a) << endl;
     }
-    if (D =0){
+    if (D == 0){
         cout <<"x = " << (-b - D)/ (2*a) << endl;
     }
     if (D < 0) {
