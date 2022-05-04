@@ -8,8 +8,7 @@ int main()
     cout << "Enter the number: ";
     cin >> number;
     for (int i = number; i > 0; i /=10){
-        if(i % 2 == 0) {
-            cout << i << "; " << endl;
+        if(i % 2 == 0){
             sum +=i %10;
         }
     }
