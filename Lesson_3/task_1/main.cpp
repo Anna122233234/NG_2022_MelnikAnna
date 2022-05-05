@@ -16,7 +16,7 @@ int main()
     for (int i = 0; i < k; i++) {
         cout << array [i] << " ";
     }
-    cout << "\nWhat number you want to check: ";
+    cout <<  endl << "What number you want to check: ";
     cin >> key;
     for (int i = 0; i < k; i++) {
         if ( array [i] == key){
