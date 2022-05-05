@@ -12,6 +12,6 @@ int main()
             sum +=i %10;
         }
     }
-    cout <<"\nSum = " << sum;
+    cout <<"Sum = " << sum;
     return 0;
 }
