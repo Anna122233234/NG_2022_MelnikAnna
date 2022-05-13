@@ -4,15 +4,24 @@ using namespace std;
 
 int main()
 {
-    string str1;
-    string str2;
+    int size = 50;
+    char str1[size];
+    char str2[size];
     cout << "Enter your first string:";
-    getline(cin, str1);
+    cin.getline(str1, size);
     cout << "Enter your second string:";
-    getline(cin, str2);
-    if(str1.length() > str2.length())
+    cin.getline(str2, size);
+    int count1 = 0;
+    while(str1[count1] != '\0'){
+        count1++;
+    }
+    int count2 = 0;
+    while(str2[count2] != '\0'){
+        count2++;
+    }
+    if(count1 > count2)
         cout << "The first string is bigger";
-    else if (str1.length() < str2.length())
+    else if(count1 < count2)
         cout << "The second string is bigger";
-    return 0;
+return 0;
 }
