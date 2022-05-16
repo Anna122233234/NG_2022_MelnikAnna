@@ -8,7 +8,7 @@ int main()
    int count = 0;
    int m = 0;
    for (int i= 0; i < 20; i++){
-           cout << "[" << i + 1 << "]" << ": ";  //9,6,2,3,0
+           cout << "[" << i + 1 << "]" << ": ";
            cin >> array [i];
            if (array [i] == 0){
            count = i;
@@ -20,17 +20,17 @@ int main()
        }
    for(int i =0; i< m; i++){
        for (int j =0; j < count; j++){
-           if (array [j] > 0){
+           if (array [j] > 0 ){
                cout << "*";
+               array[j] -= 1;
            }
             else{
                cout << " ";
+               array[j] -= 1;
            }
        }
     cout << endl;
    }
 
 }
-//1342
-//****
-//_***
+
