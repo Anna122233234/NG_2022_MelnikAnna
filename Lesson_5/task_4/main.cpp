@@ -3,13 +3,14 @@
 
 using namespace std;
 
-float initializer(float a, float b, float c, float D){
-        cout << "Enter a: ";
-        cin >> a;
-        cout << "Enter b: ";
-        cin >> b;
-        cout << "Enter c: ";
-        cin >> c;
+void initializer(){
+    float a, b, c, D;
+    cout << "Enter a: ";
+    cin >> a;
+    cout << "Enter b: ";
+    cin >> b;
+    cout << "Enter c: ";
+    cin >> c;
         D = b * b - (4* a * c);
         cout <<"D = "<< D << endl;
         if (D > 0){
@@ -23,11 +24,9 @@ float initializer(float a, float b, float c, float D){
         if (D < 0) {
             cout <<"There are no roots " << endl;
         }
-        return 0;
 }
 int main()
 {
-    float a, b , c, D;
-    initializer( a,  b,  c, D);
+    initializer();
     return 0;
 }
