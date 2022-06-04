@@ -19,8 +19,11 @@ int main()
         array1 [i] = 1 + rand () % 9;
         cout << array1[i];
     }
-    sum = array[0]*1000 + array[1]*100 + array[2]*10 + array[3];
-    sum1 = array1[0]*1000 + array1[1]*100 + array1[2]*10 + array1[3];
+    int res, res1 = 0, i, pow;
+    for (i = 3, pow = 1; i>=0; --i, pow*=10) {
+        sum += array[i] * pow;
+        sum1 += array1[i]*pow;
+    }
     if (sum > sum1)
         cout << endl << sum << " > " << sum1;
     else if (sum < sum1)
