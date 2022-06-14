@@ -23,9 +23,9 @@ int main()
     int array[5]= {5, 8, 3, 9, 1};
     int key;
     cout << "It`s your array: " << endl;
-    cout << farray(array,0);
+    farray(array,0);
     cout << endl << "Enter the number: ";
     cin  >> key;
-    cout << findnumber(array, key, 0);
+    findnumber(array, key, 0);
     return 0;
 }
