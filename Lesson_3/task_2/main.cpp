@@ -13,7 +13,7 @@ int main()
         array [i] = 1 + rand () % 9;
         array1 [i] = 1 + rand () % 9;
     }
-    int res, res1 = 0, i, pow;
+    int i, pow;
     for (i = 3, pow = 1; i>=0; --i, pow*=10) {
         sum += array[i] * pow;
         sum1 += array1[i]*pow;
